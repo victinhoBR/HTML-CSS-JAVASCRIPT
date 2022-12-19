@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+
+       
+ 
+ <script>
+    
+    var nome = window.prompt('Dgite seu nome:')
+    if (nome=="") {
+        document.write('Olá Visitante')
+    }else{
+    document.write('Olá ' +nome)}
+    document.write('<br>Por favor, preencha os campos abixo e depois clique no botão enviar. Caso necessite apagar os dados clique no botão limpar. Muito obrigado!' )
+    
+
+    var nomeup = document.formulario.nome.value;
+    var nomelow = document.formulario.email.value;
+
+    function valida() {
+         
+        if(document.formulario.nome.value=="",
+        document.formulario.email.value=="")
+            {window.alert('prencha todos os campos')}
+
+            nomeup = document.formulario.nome.value;
+            document.formulario.nome.value=nomeup.toUpperCase();
+        
+            nomelow = document.formulario.email.value;
+            document.formulario.email.value=nomelow.toLowerCase();
+
+        }
+    
+    
+
+
+    </script>
+
+    <form name="formulario" action="" method="post" >
+
+        <label>Nome Completo:</label><input type="text"  name="nome" id="nome">
+        <label>E-mail:</label><input type="text" name="email" id="email">
+        <br>
+        <br>
+        
+        Sexo: <br>
+        <input type="checkbox" name="masculino" onclick="" value=""><label>Masculino</label>
+        <br>
+        <input type="checkbox" name="feminino" onclick="" value=""><label>Feminino</label>
+        <br>
+        <br>
+        
+        <label>Estado civil:</label>
+        <br>
+        <input type="checkbox" name="Solteiro" onclick="" value=""><label>Solteiro</label>
+        <br>
+        <input type="checkbox" name="casado" onclick="" value=""><label>Casado</label>
+        <br>
+        <input type="checkbox" name="enrolado" onclick="" value=""><label>Enrolado</label>
+        <br>
+        <br>
+
+        Bem que possui:
+        <br>
+        <input type="checkbox" name="casa" onclick="" value=""><label>Cass</label>
+        <br>
+        <input type="checkbox" name="carro" onclick="" value=""><label>Carro</label>
+        <br>
+        <input type="checkbox" name="moto" onclick="" value=""><label>Moto</label>
+        <br>
+        <br>
+
+        Faixa de idade:<input type="text" name="idade"> 
+        Hobbie Preferido:<input type="text" name="hobie">
+        <br>
+        <br>
+
+        
+        <br>
+        <label>Observações Gerais:</label><br><textarea class="msg" cols="35" rows="8"></textarea><br> 
+        <br>
+        <br>
+       <input type="button" value="Enviar" onclick="valida()"></input>
+        
+    </form>
+    <br>
+    
+    <form action="">
+        <button  onclick="">Reset</button>
+
+    </form>
+    
+</body>
+</html>

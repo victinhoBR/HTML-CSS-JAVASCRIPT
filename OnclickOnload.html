@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onclick e Onload</title>
+</head>
+<body>
+
+    <h1 style="text-align: center;">Onclick e Onload</h1>
+    <hr>
+    <script>
+    
+        var nome = window.prompt('Dgite seu nome:')
+        if (nome=="") {
+            document.write('Olá Visitante')
+        }else{
+        document.write('Olá ' +nome)}
+        document.write('<br>Por favor, preencha os campos abixo e depois clique no botão enviar. Caso necessite apagar os dados clique no botão limpar. Muito obrigado!' )
+        
+    
+        var nomeup = document.formulario.nome.value;
+        var nomelow = document.formulario.email.value;
+    
+        function valida() {
+             
+            if(document.formulario.nome.value=="",document.formulario.email.value==""){
+                window.alert('prencha todos os campos')
+            }
+    
+            nomeup = document.formulario.nome.value;
+            document.formulario.nome.value=nomeup.toUpperCase();
+        
+            nomelow = document.formulario.email.value;
+            document.formulario.email.value=nomelow.toLowerCase();
+    
+        }
+        
+        
+    
+    
+    </script>
+    
+    <form name="formulario" action="" method="post" >
+    
+        <label>Nome Completo:</label><input type="text"  name="nome" id="nome">
+        <label>E-mail:</label><input type="text" name="email" id="email">
+        <br>
+        <br>
+            
+       <input type="button" value="Enviar" onclick="valida()"></input>
+            
+    </form>
+
+    <script>
+        
+        function checaCookie(){
+            if (navigator.cookieEnabled == true)
+            {
+                alert("Seus Cookies foram permitidos pelo seu navegador")
+            }
+            else{
+                alert("Seus Cookies foram bloqueados pelo seu navegador")
+            }
+
+        }
+
+        document.onload = checaCookie();     
+
+    </script>
+
+</body>
+</html>

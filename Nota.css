@@ -1,0 +1,60 @@
+label{
+    font-size: 30px;
+    font-family: "Segoe UI","Arial","Times New Roman";
+}
+
+h1{
+    font-size: 70px;
+    font-family: "Segoe UI";
+    text-align: center;
+    
+}
+
+input.nota1{
+    
+    
+    left:95px;
+    top:23px;
+    width:225px;
+      
+}
+
+input.nota2{
+    
+    
+    left:95px;
+    top:23px;
+    width:225px;
+      
+}
+
+input.nota3{
+    
+    
+    left:95px;
+    top:23px;
+    width:225px;
+      
+}
+
+input.nota4{
+    
+    
+    left:95px;
+    top:23px;
+    width:225px;
+      
+}
+
+
+
+fieldset
+{
+    
+    width:200px;
+    height:350px; 
+    margin-left: 550px;
+
+}
+
+

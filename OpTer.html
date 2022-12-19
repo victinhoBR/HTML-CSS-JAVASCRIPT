@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operador Ternario</title>
+    <link rel="stylesheet" type="text/css" href="Nota.css">
+</head>
+<body style="background-color: whitesmoke;">
+
+    <h1>Suas Nota com Operador Ternario</h1>
+    <hr>
+    <br>
+    
+    <form name="medianota" action="" method="post">
+        
+        <fieldset>
+
+            <label>Primeira nota: </label> 
+            <input id="nota1" type="number"> 
+            <br>
+
+            <br>
+            <label>Segunda  nota:</label> 
+            <input id="nota2" type="number"> 
+            <br>
+    
+            <br>
+            <label>Terceira nota:</label> 
+            <input id="nota3" type="number">
+            <br>
+            
+            <br>
+            <label>Quarta nota:</label>
+            <input id="nota4" type="number">
+            <br>
+            <br>
+            <button  onclick="media()">Calcular Média</button>
+        
+        </fieldset>
+
+    </form>
+
+    <script type="text/javascript">
+
+        function media(){
+
+         var nota1 = parseFloat(document.medianota.nota1.value);
+         var nota2 = parseFloat(document.medianota.nota2.value);
+         var nota3 = parseFloat(document.medianota.nota3.value);
+         var nota4 = parseFloat(document.medianota.nota4.value);  
+         var media = (nota1 + nota2 + nota3 + nota4)/4 ;          
+
+             document.write('<p>Aprovado: ');
+             ((media>70)? document.write('<b>Sim</b>') : document.write('<b>Nâo</b> <br>'));
+            
+             document.write('<p>Reprovado: ');
+             ((media<50)? document.write('<b>Sim</b>') : document.write('<b>Nâo</b> <br>'));
+
+             document.write('<p>Recuperação: ');
+             ((media==50)? document.write('<b>Sim</b>') : document.write('<b>Nâo</b> <br>'));
+        }
+    
+    </script>
+
+</body>
+</html>

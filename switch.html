@@ -1,61 +1,168 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Switch case</title>
+    <title>switch</title>
+    <link rel="stylesheet" type="text/css" href="Nota.css">
 </head>
-<body>
+<body style="background-color: whitesmoke;">
+
+    <h1 style='text-align: center;'>Suas Notas com Switch</h1>
+    <hr>
+    <br>
     
-    <!-- DEFINIÇÃO DE ELEMENTO FORMULÁRIO PARA ENTRADA DE DADOS -->
-    <form name="formcalend" action="" method="post">
-        digite o mês: 
-        <input type="text" name="f_mes" size="4" maxlength="2"> 
-        <br>
-        <br>
-        <input type="button" value="Processar" name="btn_processar" onclick="verificanomes()">
-        <input type="reset" value="Cancelar" name="btn_reset" onclick="verificanomes">
-        <br>
-        <br>
-        o mês correspondente é:
-        <input type="text" name="fnomemes" size="18" maxlength="15">
+    <form name="medianota" action="" method="post">
+        
+        <fieldset>
+
+            <label>Primeira nota: </label> 
+            <input id="nota1" type="number"> 
+            <br>
+
+            <br>
+            <label>Segunda  nota:</label> 
+            <input id="nota2" type="number"> 
+            <br>
+    
+            <br>
+            <label>Terceira nota:</label> 
+            <input id="nota3" type="number">
+            <br>
+            
+            <br>
+            <label>Quarta nota:</label>
+            <input id="nota4" type="number">
+            <br>
+            <br>
+            <button  onclick="media()">Calcular Média</button>
+        
+        </fieldset>
+
     </form>
 
-    <!-- INICIO DO JAVASCRIPT -->
-    <script >
+    <script type="text/javascript">
 
-        // definição das variáveis
-        var js_mes;
+        function media(){
 
-        // CRIAR A FUNÇÃO PARA CAPTURAR OS DADOS DO FORMULÁRIO
-        function verificanomes()
-        {
-            js_mes=parseInt(document.formcalend.f_mes.value);
+         var nota1 = parseFloat(document.medianota.nota1.value);
+         var nota2 = parseFloat(document.medianota.nota2.value);
+         var nota3 = parseFloat(document.medianota.nota3.value);
+         var nota4 = parseFloat(document.medianota.nota4.value);  
+         var media = (nota1 + nota2 + nota3 + nota4)/4 ;
 
-            // fazer a verificação switch case
-            switch (js_mes) 
-            {
-                case 1:document.formcalend.fnomemes.value="Janeiro";break;
-                case 2:document.formcalend.fnomemes.value="Fevereiro";break;
-                case 3:document.formcalend.fnomemes.value="Março";break;
-                case 4:document.formcalend.fnomemes.value="Abril";break;
-                case 5:document.formcalend.fnomemes.value="Maio";break;
-                case 6:document.formcalend.fnomemes.value="Junho";break;
-                case 7:document.formcalend.fnomemes.value="Julho";break;
-                case 8:document.formcalend.fnomemes.value="Agosto";break;
-                case 9:document.formcalend.fnomemes.value="Setembro";break;
-                case 10:document.formcalend.fnomemes.value="Outubro";break;
-                case 11:document.formcalend.fnomemes.value="Novembro";break;
-                case 12:document.formcalend.fnomemes.value="Dezembro";break;
-                default:document.formcalend.fnomemes.value="Mês invalido";break;
+            switch (media) {
+                case 1:alert("Reprovado, média: "+ media);break;
+                case 2:alert("Reprovado, média: "+ media);break;
+                case 3:alert("Reprovado, média: "+ media);break;
+                case 4:alert("Reprovado, média: "+ media);break;
+                case 5:alert("Reprovado, média: "+ media);break;
+                case 6:alert("Reprovado, média: "+ media);break;
+                case 7:alert("Reprovado, média: "+ media);break;
+                case 8:alert("Reprovado, média: "+ media);break;
+                case 9:alert("Reprovado, média: "+ media);break;
+                case 10:alert("Reprovado, média: "+ media);break;
+                case 11:alert("Reprovado, média: "+ media);break;
+                case 12:alert("Reprovado, média: "+ media);break;
+                case 13:alert("Reprovado, média: "+ media);break;
+                case 14:alert("Reprovado, média: "+ media);break;
+                case 15:alert("Reprovado, média: "+ media);break;
+                case 16:alert("Reprovado, média: "+ media);break;
+                case 17:alert("Reprovado, média: "+ media);break;
+                case 18:alert("Reprovado, média: "+ media);break;
+                case 19:alert("Reprovado, média: "+ media);break;
+                case 20:alert("Reprovado, média: "+ media);break;
+                case 21:alert("Reprovado, média: "+ media);break;
+                case 22:alert("Reprovado, média: "+ media);break;
+                case 23:alert("Reprovado, média: "+ media);break;
+                case 24:alert("Reprovado, média: "+ media);break;
+                case 25:alert("Reprovado, média: "+ media);break;
+                case 26:alert("Reprovado, média: "+ media);break;
+                case 27:alert("Reprovado, média: "+ media);break;
+                case 28:alert("Reprovado, média: "+ media);break;
+                case 29:alert("Reprovado, média: "+ media);break;
+                case 30:alert("Reprovado, média: "+ media);break;
+                case 31:alert("Reprovado, média: "+ media);break;
+                case 32:alert("Reprovado, média: "+ media);break;
+                case 33:alert("Reprovado, média: "+ media);break;
+                case 34:alert("Reprovado, média: "+ media);break;
+                case 35:alert("Reprovado, média: "+ media);break;
+                case 36:alert("Reprovado, média: "+ media);break;
+                case 37:alert("Reprovado, média: "+ media);break;
+                case 38:alert("Reprovado, média: "+ media);break;
+                case 39:alert("Reprovado, média: "+ media);break;
+                case 40:alert("Reprovado, média: "+ media);break;
+                case 41:alert("Reprovado, média: "+ media);break;
+                case 42:alert("Reprovado, média: "+ media);break;
+                case 43:alert("Reprovado, média: "+ media);break;
+                case 44:alert("Reprovado, média: "+ media);break;
+                case 45:alert("Reprovado, média: "+ media);break;
+                case 46:alert("Reprovado, média: "+ media);break;
+                case 47:alert("Reprovado, média: "+ media);break;
+                case 48:alert("Reprovado, média: "+ media);break;
+                case 49:alert("Reprovado, média: "+ media);break;
+                case 50:alert("Recuperaçãp, média: "+ media);break;
+                case 51:alert("Recuperaçãp, média: "+ media);break;
+                case 52:alert("Recuperaçãp, média: "+ media);break;
+                case 53:alert("Recuperaçãp, média: "+ media);break;
+                case 54:alert("Recuperaçãp, média: "+ media);break;
+                case 55:alert("Recuperaçãp, média: "+ media);break;
+                case 56:alert("Recuperaçãp, média: "+ media);break;
+                case 57:alert("Recuperaçãp, média: "+ media);break;
+                case 58:alert("Recuperaçãp, média: "+ media);break;
+                case 59:alert("Recuperaçãp, média: "+ media);break;
+                case 60:alert("Recuperaçãp, média: "+ media);break;
+                case 61:alert("Recuperaçãp, média: "+ media);break;
+                case 62:alert("Recuperaçãp, média: "+ media);break;
+                case 63:alert("Recuperaçãp, média: "+ media);break;
+                case 64:alert("Recuperaçãp, média: "+ media);break;
+                case 65:alert("Recuperaçãp, média: "+ media);break;
+                case 66:alert("Recuperaçãp, média: "+ media);break;
+                case 67:alert("Recuperaçãp, média: "+ media);break;
+                case 68:alert("Recuperaçãp, média: "+ media);break;
+                case 69:alert("Recuperaçãp, média: "+ media);break;
+                case 70:alert("aprovado, média: "+ media);break;
+                case 71:alert("aprovado, média: "+ media);break;
+                case 72:alert("aprovado, média: "+ media);break;
+                case 73:alert("aprovado, média: "+ media);break;
+                case 74:alert("aprovado, média: "+ media);break;
+                case 75:alert("aprovado, média: "+ media);break;
+                case 76:alert("aprovado, média: "+ media);break;
+                case 77:alert("aprovado, média: "+ media);break;
+                case 78:alert("aprovado, média: "+ media);break;
+                case 79:alert("aprovado, média: "+ media);break;
+                case 80:alert("aprovado, média: "+ media);break;
+                case 81:alert("aprovado, média: "+ media);break;
+                case 82:alert("aprovado, média: "+ media);break;
+                case 83:alert("aprovado, média: "+ media);break;
+                case 84:alert("aprovado, média: "+ media);break;
+                case 85:alert("aprovado, média: "+ media);break;
+                case 86:alert("aprovado, média: "+ media);break;
+                case 87:alert("aprovado, média: "+ media);break;
+                case 88:alert("aprovado, média: "+ media);break;
+                case 89:alert("aprovado, média: "+ media);break;
+                case 90:alert("aprovado, média: "+ media);break;
+                case 91:alert("aprovado, média: "+ media);break;
+                case 92:alert("aprovado, média: "+ media);break;
+                case 93:alert("aprovado, média: "+ media);break;
+                case 94:alert("aprovado, média: "+ media);break;
+                case 95:alert("aprovado, média: "+ media);break;
+                case 96:alert("aprovado, média: "+ media);break;
+                case 97:alert("aprovado, média: "+ media);break;
+                case 98:alert("aprovado, média: "+ media);break;
+                case 99:alert("aprovado, média: "+ media);break;
+                case 100:alert("aprovado, média: "+ media);break;
+
+
+                default:
                     break;
             }
+
         }
-        
 
+       
     </script>
-
 
 
 
