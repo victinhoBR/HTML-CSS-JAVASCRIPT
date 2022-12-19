@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concatenação</title>
+</head>
+<body>
+    
+    <h3>Boas vindas com concatenação de campos.</h3>
+    
+    <!-- definição de formulário  -->
+    <form name="FormConcatena" action="mailto:vm772036@gmail.com" method="post">
+        
+        Digite o nome: 
+        <input type="text" name="F_nome"> 
+            <br> 
+                <br>
+        
+        Digite o sobre nome: <input type="text" name="F_sobrenome"> 
+            <br>
+                <br>
+        
+        <input type="button" name="btn_concatena" value="Concatenar" onclick="concatena()">                 
+        <input type="reset" name="btn_cancela" value="Cancelar">
+
+    </form>    
+
+    <script type="text/javascript">
+
+        // Objtv: capturar o nome e o sobrenome e concatenar formando um nome completo
+
+        // definição de variaveis
+        var js_nome
+        var js_sobrenome
+        var js_nomecompleto
+
+        function concatena() {
+            
+            // entrada de dados
+            js_nome= document.FormConcatena.F_nome.value;
+            js_sobrenome= document.FormConcatena.F_sobrenome.value;
+
+            // processamento de dados
+            js_nomecompleto=js_nome +' '+js_sobrenome;
+
+            // saída de dados
+            window.alert('Olá '+ js_nomecompleto);
+
+        }
+
+    </script>
+</body>
+</html>
