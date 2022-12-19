@@ -1,2 +1,2 @@
-# JAVASCRIPT
-minhas criações em javascript  
+# HYML/CSS/JAVASCRIPT
+minhas criações em HYML/CSS/JAVASCRIPT  
