@@ -1,2 +1,2 @@
-# JAVA
-minhas criações em java 
+# JAVASCRIPT
+minhas criações em javascript  
